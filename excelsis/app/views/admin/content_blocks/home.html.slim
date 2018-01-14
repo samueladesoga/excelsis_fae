@@ -1,0 +1,22 @@
+= simple_form_for @item, url: fae.update_content_block_path(slug: @item.slug), method: :put do |f|
+  header.content-header.js-content-header
+    == render 'fae/shared/form_header', header: @item
+
+  main.content
+    = fae_input f, :title
+
+    = fae_content_form f, :main_heading
+    = fae_content_form f, :sub_heading
+    = fae_content_form f, :reason_text
+    = fae_content_form f, :service1_heading
+    = fae_content_form f, :service1_body
+    = fae_content_form f, :service2_heading
+    = fae_content_form f, :service2_body
+    = fae_content_form f, :course1_heading
+    = fae_content_form f, :course1_body
+    = fae_content_form f, :course2_heading
+    = fae_content_form f, :course2_body
+    = fae_content_form f, :course3_heading
+    = fae_content_form f, :course3_body
+    = fae_content_form f, :course4_heading
+    = fae_content_form f, :course4_body
